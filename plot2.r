@@ -16,8 +16,7 @@ raw_d <- read.csv(filename, sep = ";", nrows = 80000,
 months(as.Date(raw_d[1,1]))
 
 d<-raw_d
-#had to google this
-#wrong!
+
 #d$Date<-as.Date(d$Date)
 d$Date2<-as.Date(d$Date, "%d/%m/%Y")
 #subsetting to the correct days
